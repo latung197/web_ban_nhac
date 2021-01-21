@@ -53,7 +53,8 @@ html{
 }
 
 #slider{
-
+height: 500px;
+background-color: #333;
 }
 
 #constain{
