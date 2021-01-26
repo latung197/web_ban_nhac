@@ -30,31 +30,65 @@ html{
     background-color: black;
 }
 
-#nav li{
+#nav > li{
     display: inline-block;
+    position: relative;
 }
 #nav .subnav{
-
     display: none;
+    background-color: #fff;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+#nav ul{
+    list-style: none;
 }
 
-#nav li a{
+#nav > li> a{
     color: #fff;
     text-decoration: none;
     line-height: 46px;
     padding: 0px 24px;
+    text-transform: uppercase;
 }
-#nav li:hover a{
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0px 24px;
+}
+#nav li:hover > a{
     display: inline-block;
     background-color: #ccc;
     color: #000;
-   
-    
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a{
+    display: block;
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav a{
+
+        padding: 0 12px;
+        line-height: 38px;
+}
+
+
+
+#nav .subnav a
+{
+    color: black;
 }
 
 #slider{
 height: 500px;
-background-color: #333;
 }
 
 #constain{
