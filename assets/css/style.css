@@ -1,100 +1,93 @@
-/* resset css */
 *{
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
 }
- 
+
 /* 
-1:Làm từ ngoài vào trong 
-2:Từ trên xuống dưới 
-3:Tổng quan đến chi tiết
+Làm từ trên xuống dưới
+Từ trong ra ngoài
+=> Làm từ tổng quan đến chi tiết
 */
-/*
-1 vị trí
-2 kích thước
-3 màu sắc
-4 kiểu dáng 
+
+/* 
+1 Vị trí
+2 Kích thước
+3 Màu sắc
+4 Kiểu giáng
 */
 
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#main {
+#main{
 
+}
+#nav, .subnav
+{
+list-style-type: none;
 }
 
 #header{
     height: 46px;
-    background-color: black;
+    background-color: #000;
 }
 
-#nav > li{
+#nav >li{
     display: inline-block;
+}
+
+#nav > li 
+{
+    text-decoration: none;
     position: relative;
 }
-#nav .subnav{
-    display: none;
-    background-color: #fff;
-    position: absolute;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    min-width: 160px;
-}
-#nav ul{
-    list-style: none;
-}
-
 #nav > li> a{
-    color: #fff;
     text-decoration: none;
+    color: #fff;
     line-height: 46px;
     padding: 0px 24px;
     text-transform: uppercase;
+    display: inline-block;
+    /* Thuộc tính inline block sẽ làm cho kích thước 
+    thẻ a được căn chỉnh rộng như cả line-height */
 }
 
-#nav li a{
-    text-decoration: none;
-    line-height: 46px;
-    padding: 0px 24px;
-}
-#nav li:hover > a{
-    display: inline-block;
+#nav >li:hover >a ,
+.subnav > li:hover > a
+{
     background-color: #ccc;
     color: #000;
 }
-
+#nav .subnav  a{
+    color: #000;
+    line-height: 46px;
+    padding: 0px 16px;
+    display: block;
+    text-decoration: none;
+    line-height: 38px;
+}
+#nav .subnav{
+        display: none;
+        top: 46px;
+        min-width: 160px;
+        position:absolute;
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 #nav li:hover .subnav{
     display: block;
 }
-
-#nav .subnav li:hover a{
-    display: block;
-    background-color: #ccc;
-    color: #000;
+#nav .subnav li{
+    width: 100%;
 }
 
-#nav .subnav a{
-
-        padding: 0 12px;
-        line-height: 38px;
-}
-
-
-
-#nav .subnav a
-{
-    color: black;
-}
-
-#slider{
-height: 500px;
-}
-
-#constain{
+#header #nav {
 
 }
 
-#footer{
+#sideder{
 
 }
