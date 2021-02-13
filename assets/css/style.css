@@ -28,10 +28,17 @@ html{
 {
 list-style-type: none;
 }
+#nav{
+    display: inline;
+}
 
 #header{
     height: 46px;
     background-color: #000;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
 }
 
 #nav >li{
@@ -83,11 +90,26 @@ list-style-type: none;
 #nav .subnav li{
     width: 100%;
 }
-
-#header #nav {
+#nav .arrow-down
+{
+    font-size: 12px;
+}
+#header .search-btn  {
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0px 10px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
 
 }
 
-#sideder{
 
+#sideder{
+    margin-top: 46px;
+    background-color: #333;
+    height: 10000px;
 }
