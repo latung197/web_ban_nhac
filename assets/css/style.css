@@ -39,6 +39,7 @@ list-style-type: none;
     top: 0px;
     right: 0px;
     left: 0px;
+    z-index: 1;
 }
 
 #nav >li{
@@ -110,6 +111,30 @@ list-style-type: none;
 
 #sideder{
     margin-top: 46px;
-    background-color: #333;
-    height: 10000px;
+    padding-top: 50%;
+    background-image: url(/assets/img/slider1/la.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+}
+
+#sideder .text-content{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    
+}
+
+#sideder .text-content H1{
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#content .content-secstion{
+    width: 800px;
+    padding: 64px 0px;
 }
